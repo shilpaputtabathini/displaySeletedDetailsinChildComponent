@@ -1,0 +1,29 @@
+<div class="container">
+    <!-- emp Search with name starts -->
+    <div class="row justify-content-end">
+        <div class="col align-self-end">
+            <input type="text" placeholder="Search with EmpName" [(ngModel)]="searchEmpName" />
+        </div>
+    </div>
+
+    <!-- emp Search with name ends-->
+    <div class="row">
+
+        <!-- Emp Lists starts -->
+        <div class="col">
+            <ul>
+                <li *ngFor="let data of getdataIs | searchWithText:searchEmpName" (click)="discoverClicked(data)">
+                    <td>{{data.empName}}</td>
+                </li>
+            </ul>
+        </div>
+        <!-- Emp Lists ends -->
+
+        <!-- Selected Emp Details starts -->
+        <div class="col" *ngIf="selectedDetailsIs != null">
+
+            <app-show-row-details [selectedDetailsIs]=selectedDetailsIs></app-show-row-details>
+        </div>
+        <!-- Selected Emp Details ends -->
+    </div>
+</div>

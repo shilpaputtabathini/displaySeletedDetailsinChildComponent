@@ -1,0 +1,28 @@
+[
+    {
+        "empName": "Manoj",
+        "empId": 15,
+        "empLocation": "Hyderabad",
+        "empAge": 53
+    },{
+        "empName": "Kiran",
+        "empId": 35,
+        "empLocation": "Secudrabad",
+        "empAge": 32
+    },{
+        "empName": "Swetha",
+        "empId": 85,
+        "empLocation": "Nejamabad",
+        "empAge": 67
+    },{
+        "empName": "Manjula",
+        "empId": 155,
+        "empLocation": "Medak",
+        "empAge": 89
+    },{
+        "empName": "Harish",
+        "empId": 45,
+        "empLocation": "Vikarabad",
+        "empAge": 23
+    }
+]
